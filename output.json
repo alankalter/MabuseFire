@@ -1,806 +1,236 @@
 [
     {
-        "date": "04/01/2017",
-        "url": "http://www.cinefamily.org/films/animation-breakdown?time=past#saturday-morning-cartoons-april-fools-day",
-        "title": "Saturday Morning Cartoons: April Fool's Day",
-        "time": ""
-    },
-    {
-        "date": "04/01/2017",
-        "url": "http://www.cinefamily.org/films/special-events-april-2017?time=past#whos-crazy",
-        "title": "Who's Crazy?",
-        "time": ""
-    },
-    {
-        "date": "04/01/2017",
-        "url": "http://www.cinefamily.org/films/kedi?time=past#kedi-3",
-        "title": "Kedi",
-        "time": ""
-    },
-    {
-        "date": "04/01/2017",
-        "url": "http://www.cinefamily.org/films/donnie-darko?time=past#donnie-darko-with-richard-kelly-in-person-2",
-        "title": "Donnie Darko (theatrical version with Richard Kelly in person!)",
-        "time": ""
-    },
-    {
-        "date": "04/01/2017",
-        "url": "http://www.cinefamily.org/films/rock-n-roll-fascism?time=past#pink-floyd-the-wall",
-        "title": "Pink Floyd: The Wall",
-        "time": ""
-    },
-    {
-        "date": "04/02/2017",
-        "url": "http://www.cinefamily.org/films/special-events-april-2017?time=past#whos-crazy-2",
-        "title": "Who's Crazy?",
-        "time": ""
-    },
-    {
-        "date": "04/02/2017",
-        "url": "http://www.cinefamily.org/films/kedi?time=past#kedi-4",
-        "title": "Kedi",
-        "time": ""
-    },
-    {
-        "date": "04/02/2017",
-        "url": "http://www.cinefamily.org/films/donnie-darko?time=past#donnie-darko-6",
-        "title": "Donnie Darko (director's cut)",
-        "time": ""
-    },
-    {
-        "date": "04/03/2017",
-        "url": "http://www.cinefamily.org/films/kedi?time=past#kedi-5",
-        "title": "Kedi",
-        "time": ""
-    },
-    {
-        "date": "04/03/2017",
-        "url": "http://www.cinefamily.org/films/donnie-darko?time=past#donnie-darko-2",
-        "title": "Donnie Darko (theatrical version)",
-        "time": ""
-    },
-    {
-        "date": "04/04/2017",
-        "url": "http://www.cinefamily.org/films/fight-the-power?time=past#1984-free-w-rsvp",
-        "title": "1984",
-        "time": ""
-    },
-    {
-        "date": "04/04/2017",
-        "url": "http://www.cinefamily.org/films/donnie-darko?time=past#donnie-darko-3",
-        "title": "Donnie Darko (director's cut)",
-        "time": ""
-    },
-    {
-        "date": "04/05/2017",
-        "url": "http://www.cinefamily.org/films/donnie-darko?time=past#donnie-darko-4",
-        "title": "Donnie Darko (theatrical version)",
-        "time": ""
-    },
-    {
-        "date": "04/05/2017",
-        "url": "http://www.cinefamily.org/films/fight-the-power?time=past#tickling-giants-w-sara-taksler-and-bassem-youssef-in-person",
-        "title": "Tickling Giants (Off-site at the Vista, w/ Larry Wilmore, Bassem Youssef, and Sara Taksler in person!) ",
-        "time": ""
-    },
-    {
-        "date": "04/06/2017",
-        "url": "http://www.cinefamily.org/films/special-events-april-2017?time=past#the-black-power-mixtape-1967-1975-encore",
-        "title": "The Black Power Mixtape 1967-1975 (encore!)",
-        "time": ""
-    },
-    {
-        "date": "04/06/2017",
-        "url": "http://www.cinefamily.org/films/donnie-darko?time=past#donnie-darko-5",
-        "title": "Donnie Darko (director's cut)",
-        "time": ""
-    },
-    {
-        "date": "04/07/2017",
-        "url": "http://www.cinefamily.org/films/?time=past#private-rental-16",
-        "title": "Private Rental",
-        "time": ""
-    },
-    {
-        "date": "04/08/2017",
-        "url": "http://www.cinefamily.org/films/?time=past#private-rental-17",
-        "title": "Private Rental",
-        "time": ""
-    },
-    {
-        "date": "04/09/2017",
-        "url": "http://www.cinefamily.org/films/special-events-april-2017?time=past#adalen-31-encore",
-        "title": "Adalen 31 (encore!)",
-        "time": ""
-    },
-    {
-        "date": "04/09/2017",
-        "url": "http://www.cinefamily.org/films/la-collectionneuse?time=past#sans-soleil",
-        "title": "Sans Soleil",
-        "time": ""
-    },
-    {
-        "date": "04/09/2017",
-        "url": "http://www.cinefamily.org/films/special-events-april-2017?time=past#pink-floyd-the-wall-encore",
-        "title": "Pink Floyd: The Wall (encore!)",
-        "time": ""
-    },
-    {
-        "date": "04/10/2017",
-        "url": "http://www.cinefamily.org/films/?time=past#private-rental-18",
-        "title": "Private Rental",
-        "time": ""
-    },
-    {
-        "date": "04/11/2017",
-        "url": "http://www.cinefamily.org/films/?time=past#private-rental-19",
-        "title": "Private Rental",
-        "time": ""
-    },
-    {
-        "date": "04/12/2017",
-        "url": "http://www.cinefamily.org/films/the-greg-proops-film-club?time=past#do-the-right-thing",
-        "title": "Do the Right Thing",
-        "time": ""
-    },
-    {
-        "date": "04/12/2017",
-        "url": "http://www.cinefamily.org/films/special-events-april-2017?time=past#free-fire-free-sneak-peek-w-ben-wheatley-in-person",
-        "title": "Free Fire (Free sneak peek w/ Ben Wheatley in person!)",
-        "time": ""
-    },
-    {
-        "date": "04/13/2017",
-        "url": "http://www.cinefamily.org/films/a-band-and-a-movie?time=past#somewhere-beautiful-with-atom-egoyan-albert-kodagolian-in-person-avi-buffalo-live",
-        "title": "Somewhere Beautiful (with Atom Egoyan, Albert Kodagolian in person) + Avi Buffalo & Andrea Silva live!",
-        "time": ""
-    },
-    {
-        "date": "04/14/2017",
-        "url": "http://www.cinefamily.org/films/david-lynch?time=past#david-lynch-the-art-life",
+        "date": "05/01/2017",
+        "url": "http://www.cinefamily.org/films/david-lynch?time=past#david-lynch-the-art-life-13",
         "title": "David Lynch: The Art Life",
         "time": ""
     },
     {
-        "date": "04/14/2017",
-        "url": "http://www.cinefamily.org/films/special-events-april-2017?time=past#subject-los-angeles-off-site-at-the-bob-baker-marionette-theater",
-        "title": "Subject: Los Angeles (off-site at the Bob Baker Marionette theater)",
+        "date": "05/01/2017",
+        "url": "http://www.cinefamily.org/films/david-lynch?time=past#the-short-films-of-david-lynch",
+        "title": "The Short Films of David Lynch",
         "time": ""
     },
     {
-        "date": "04/14/2017",
-        "url": "http://www.cinefamily.org/films/david-lynch?time=past#david-lynch-the-art-life-9",
-        "title": "David Lynch: The Art Life",
+        "date": "05/02/2017",
+        "url": "http://www.cinefamily.org/films/the-doug-benson-movie-interruption?time=past#doug-benson-movie-interruption-la-la-land",
+        "title": "Doug Benson Movie Interruption: La La Land",
         "time": ""
     },
     {
-        "date": "04/14/2017",
-        "url": "http://www.cinefamily.org/films/friday-night-frights?time=past#king-kong",
-        "title": "King Kong",
-        "time": ""
-    },
-    {
-        "date": "04/15/2017",
-        "url": "http://www.cinefamily.org/films/the-silent-treatment?time=past#three-ages",
-        "title": "Three Ages (new restoration!)",
-        "time": ""
-    },
-    {
-        "date": "04/15/2017",
-        "url": "http://www.cinefamily.org/films/david-lynch?time=past#david-lynch-the-art-life-2",
-        "title": "David Lynch: The Art Life",
-        "time": ""
-    },
-    {
-        "date": "04/15/2017",
-        "url": "http://www.cinefamily.org/films/special-events-april-2017?time=past#get-high-watch-wrestling-with-ron-funches-x-pac",
-        "title": " Get High Watch Wrestling with Ron Funches & X-Pac",
-        "time": ""
-    },
-    {
-        "date": "04/15/2017",
-        "url": "http://www.cinefamily.org/films/rock-n-roll-fascism?time=past#wild-in-the-streets",
-        "title": "Wild in the Streets",
-        "time": ""
-    },
-    {
-        "date": "04/16/2017",
-        "url": "http://www.cinefamily.org/films/david-lynch?time=past#david-lynch-the-art-life-3",
-        "title": "David Lynch: The Art Life",
-        "time": ""
-    },
-    {
-        "date": "04/16/2017",
-        "url": "http://www.cinefamily.org/films/david-lynch?time=past#david-lynch-the-art-life-10",
-        "title": "David Lynch: The Art Life",
-        "time": ""
-    },
-    {
-        "date": "04/16/2017",
-        "url": "http://www.cinefamily.org/films/donnie-darko?time=past#donnie-darko-theatrical-cut",
-        "title": "Donnie Darko (theatrical cut)",
-        "time": ""
-    },
-    {
-        "date": "04/17/2017",
-        "url": "http://www.cinefamily.org/films/donnie-darko?time=past#donnie-darko-theatrical-cut-2",
-        "title": "Donnie Darko (theatrical cut)",
-        "time": ""
-    },
-    {
-        "date": "04/17/2017",
-        "url": "http://www.cinefamily.org/films/david-lynch?time=past#david-lynch-the-art-life-4",
-        "title": "David Lynch: The Art Life",
-        "time": ""
-    },
-    {
-        "date": "04/18/2017",
-        "url": "http://www.cinefamily.org/films/special-events-april-2017?time=past#denis-villeneuves-polytechnique-free-w-rsvp",
-        "title": "Denis Villeneuve’s Polytechnique (Free w/ RSVP)",
-        "time": ""
-    },
-    {
-        "date": "04/18/2017",
-        "url": "http://www.cinefamily.org/films/david-lynch?time=past#david-lynch-the-art-life-5",
-        "title": "David Lynch: The Art Life",
-        "time": ""
-    },
-    {
-        "date": "04/19/2017",
-        "url": "http://www.cinefamily.org/films/special-events-april-2017?time=past#national-canadian-film-day-free-w-rsvp-denis-villeneuve-in-person",
-        "title": "National Canadian Film Day (Free w/ RSVP! Denis Villeneuve in person!)",
-        "time": ""
-    },
-    {
-        "date": "04/20/2017",
-        "url": "http://www.cinefamily.org/films/david-lynch?time=past#david-lynch-the-art-life-7",
-        "title": "David Lynch: The Art Life",
-        "time": ""
-    },
-    {
-        "date": "04/20/2017",
-        "url": "http://www.cinefamily.org/films/special-events-april-2017?time=past#hot-fuzz-10th-anniversary-at-the-vista-edgar-wright-in-person",
-        "title": "Hot Fuzz 10th Anniversary at the Vista w/ Point Break!",
-        "time": ""
-    },
-    {
-        "date": "04/20/2017",
-        "url": "http://www.cinefamily.org/films/special-events-april-2017?time=past#420-bug-out-phase-iv",
-        "title": "4/20 BUG OUT: Phase IV",
-        "time": ""
-    },
-    {
-        "date": "04/20/2017",
-        "url": "http://www.cinefamily.org/films/animation-breakdown?time=past#fantastic-animation-festival-1977",
-        "title": "ABD 4/20 Party: Fantastic Animation Festival (1977)",
-        "time": ""
-    },
-    {
-        "date": "04/21/2017",
-        "url": "http://www.cinefamily.org/films/fight-the-power?time=past#the-battle-of-algiers",
-        "title": "The Battle of Algiers",
-        "time": ""
-    },
-    {
-        "date": "04/21/2017",
-        "url": "http://www.cinefamily.org/films/david-lynch?time=past#eraserhead",
-        "title": "Eraserhead",
-        "time": ""
-    },
-    {
-        "date": "04/22/2017",
-        "url": "http://www.cinefamily.org/films/rock-n-roll-fascism?time=past#the-apple",
-        "title": "The Apple",
-        "time": ""
-    },
-    {
-        "date": "04/23/2017",
-        "url": "http://www.cinefamily.org/films/david-lynch?time=past#the-early-short-films-of-david-lynch",
-        "title": "The Early Short Films of David Lynch",
-        "time": ""
-    },
-    {
-        "date": "04/23/2017",
-        "url": "http://www.cinefamily.org/films/david-lynch?time=past#david-lynch-the-art-life-8",
-        "title": "David Lynch: The Art Life",
-        "time": ""
-    },
-    {
-        "date": "04/24/2017",
-        "url": "http://www.cinefamily.org/films/fight-the-power?time=past#norma-rae",
-        "title": "Norma Rae",
-        "time": ""
-    },
-    {
-        "date": "04/24/2017",
-        "url": "http://www.cinefamily.org/films/david-lynch?time=past#eraserhead-2",
-        "title": "Eraserhead",
-        "time": ""
-    },
-    {
-        "date": "04/25/2017",
-        "url": "http://www.cinefamily.org/films/david-lynch?time=past#the-early-short-films-of-david-lynch-2",
-        "title": "The Early Short Films of David Lynch",
-        "time": ""
-    },
-    {
-        "date": "04/26/2017",
-        "url": "http://www.cinefamily.org/films/special-events-april-2017?time=past#ptit-quinquin-with-bruno-dumont-in-person",
-        "title": "Li'l Quinquin (Los Angeles premiere with Bruno Dumont in person!)",
-        "time": ""
-    },
-    {
-        "date": "04/27/2017",
-        "url": "http://www.cinefamily.org/films/special-events-april-2017#la-vie-de-jesus-with-bruno-dumont-in-person",
-        "title": "La Vie de Jésus (with Bruno Dumont in person!)",
+        "date": "05/03/2017",
+        "url": "http://www.cinefamily.org/films/david-lynch#the-short-films-of-david-lynch-2",
+        "title": "The Short Films of David Lynch",
         "time": "7:30 PM"
     },
     {
-        "date": "04/27/2017",
-        "url": "http://www.cinefamily.org/films/animation-breakdown#autarky",
-        "title": "Autarky! Frontier Animation from CalArts",
+        "date": "05/03/2017",
+        "url": "http://www.cinefamily.org/films/la-collectionneuse#touche-francaise-off-site-at-zebulon",
+        "title": "Touche française (Off-site at Zebulon)",
+        "time": "9:00 PM"
+    },
+    {
+        "date": "05/03/2017",
+        "url": "http://www.cinefamily.org/films/david-lynch#david-lynch-the-art-life-14",
+        "title": "David Lynch: The Art Life",
+        "time": "9:30 PM"
+    },
+    {
+        "date": "05/04/2017",
+        "url": "http://www.cinefamily.org/films/david-lynch#david-lynch-the-art-life-15",
+        "title": "David Lynch: The Art Life",
+        "time": "7:30 PM"
+    },
+    {
+        "date": "05/04/2017",
+        "url": "http://www.cinefamily.org/films/david-lynch#the-short-films-of-david-lynch-3",
+        "title": "The Short Films of David Lynch",
+        "time": "10:00 PM"
+    },
+    {
+        "date": "05/05/2017",
+        "url": "http://www.cinefamily.org/films/no-great-women-artists#short-films-curated-for-i-love-dick-with-filmmaker-naomi-uman-and-curator-logan-kibens-in-person",
+        "title": "Short Films curated for I Love Dick (with filmmaker Naomi Uman and curator Logan Kibens in person!)",
+        "time": "7:30 PM"
+    },
+    {
+        "date": "05/05/2017",
+        "url": "http://www.cinefamily.org/films/special-events-may-2017#another-evil-w-director-carson-mell-in-person",
+        "title": "Another Evil (w/ director Carson Mell and cast in person!)",
         "time": "10:30 PM"
     },
     {
-        "date": "04/28/2017",
-        "url": "http://www.cinefamily.org/films/fight-the-power#sympathy-for-the-devil",
-        "title": "Sympathy for the Devil",
+        "date": "05/06/2017",
+        "url": "http://www.cinefamily.org/films/animation-breakdown#saturday-morning-cartoons-music",
+        "title": "Saturday Morning Cartoons: Music",
+        "time": "11:00 AM"
+    },
+    {
+        "date": "05/06/2017",
+        "url": "http://www.cinefamily.org/films/no-great-women-artists#orlando",
+        "title": "Orlando",
         "time": "7:30 PM"
     },
     {
-        "date": "04/28/2017",
-        "url": "http://www.cinefamily.org/films/special-events-april-2017#subject-los-angeles-in-the-streets",
-        "title": "Subject: Los Angeles in the Streets (off-site at the Bob Baker Marionette Theater)",
-        "time": "8:00 PM"
-    },
-    {
-        "date": "04/28/2017",
-        "url": "http://www.cinefamily.org/films/david-lynch#david-lynch-the-art-life-11",
-        "title": "David Lynch: The Art Life",
-        "time": "10:00 PM"
-    },
-    {
-        "date": "04/28/2017",
-        "url": "http://www.cinefamily.org/films/friday-night-frights#body-bags",
-        "title": "Body Bags (w/ producer Sandy King Carpenter in person!)",
-        "time": "MIDNITE"
-    },
-    {
-        "date": "04/29/2017",
-        "url": "http://www.cinefamily.org/films/fight-the-power#how-to-survive-a-plague-with-act-up-member-maria-maggenti-in-person",
-        "title": "How to Survive a Plague (with ACT UP member Maria Maggenti in person!)",
-        "time": "6:00 PM"
-    },
-    {
-        "date": "04/29/2017",
-        "url": "http://www.cinefamily.org/films/fight-the-power#animal-farm-off-site-at-the-bob-baker-marionette-theater",
-        "title": "Animal Farm (off-site at the Bob Baker Marionette Theater)",
-        "time": "7:30 PM"
-    },
-    {
-        "date": "04/29/2017",
-        "url": "http://www.cinefamily.org/films/special-events-april-2017#super-tight-1-year-anniversary",
-        "title": "Super Tight 2 Year Anniversary ",
-        "time": "10:00 PM"
-    },
-    {
-        "date": "04/30/2017",
-        "url": "http://www.cinefamily.org/films/special-events-april-2017#i-love-dick-the-complete-series-with-jill-soloway-kathryn-hahn-chris-kraus-in-person",
-        "title": "I Love Dick: The Complete Series (with Jill Soloway, Kathryn Hahn & Chris Kraus in person)",
-        "time": "12:00 PM"
-    },
-    {
-        "date": "04/30/2017",
-        "url": "http://www.cinefamily.org/films/animation-breakdown#seeing-sound-mary-ellen-bute-retrospective",
-        "title": "Seeing Sound: Mary Ellen Bute Retrospective",
-        "time": "7:00 PM"
-    },
-    {
-        "date": "04/30/2017",
-        "url": "http://www.cinefamily.org/films/david-lynch#david-lynch-the-art-life-12",
-        "title": "David Lynch: The Art Life",
-        "time": "10:00 PM"
-    },
-    {
-        "date": "04/01/2017",
-        "url": "http://www.cinefamily.org/films/animation-breakdown?time=past#saturday-morning-cartoons-april-fools-day",
-        "title": "Saturday Morning Cartoons: April Fool's Day",
-        "time": ""
-    },
-    {
-        "date": "04/01/2017",
-        "url": "http://www.cinefamily.org/films/special-events-april-2017?time=past#whos-crazy",
-        "title": "Who's Crazy?",
-        "time": ""
-    },
-    {
-        "date": "04/01/2017",
-        "url": "http://www.cinefamily.org/films/kedi?time=past#kedi-3",
-        "title": "Kedi",
-        "time": ""
-    },
-    {
-        "date": "04/01/2017",
-        "url": "http://www.cinefamily.org/films/donnie-darko?time=past#donnie-darko-with-richard-kelly-in-person-2",
-        "title": "Donnie Darko (theatrical version with Richard Kelly in person!)",
-        "time": ""
-    },
-    {
-        "date": "04/01/2017",
-        "url": "http://www.cinefamily.org/films/rock-n-roll-fascism?time=past#pink-floyd-the-wall",
-        "title": "Pink Floyd: The Wall",
-        "time": ""
-    },
-    {
-        "date": "04/02/2017",
-        "url": "http://www.cinefamily.org/films/special-events-april-2017?time=past#whos-crazy-2",
-        "title": "Who's Crazy?",
-        "time": ""
-    },
-    {
-        "date": "04/02/2017",
-        "url": "http://www.cinefamily.org/films/kedi?time=past#kedi-4",
-        "title": "Kedi",
-        "time": ""
-    },
-    {
-        "date": "04/02/2017",
-        "url": "http://www.cinefamily.org/films/donnie-darko?time=past#donnie-darko-6",
-        "title": "Donnie Darko (director's cut)",
-        "time": ""
-    },
-    {
-        "date": "04/03/2017",
-        "url": "http://www.cinefamily.org/films/kedi?time=past#kedi-5",
-        "title": "Kedi",
-        "time": ""
-    },
-    {
-        "date": "04/03/2017",
-        "url": "http://www.cinefamily.org/films/donnie-darko?time=past#donnie-darko-2",
-        "title": "Donnie Darko (theatrical version)",
-        "time": ""
-    },
-    {
-        "date": "04/04/2017",
-        "url": "http://www.cinefamily.org/films/fight-the-power?time=past#1984-free-w-rsvp",
-        "title": "1984",
-        "time": ""
-    },
-    {
-        "date": "04/04/2017",
-        "url": "http://www.cinefamily.org/films/donnie-darko?time=past#donnie-darko-3",
-        "title": "Donnie Darko (director's cut)",
-        "time": ""
-    },
-    {
-        "date": "04/05/2017",
-        "url": "http://www.cinefamily.org/films/donnie-darko?time=past#donnie-darko-4",
-        "title": "Donnie Darko (theatrical version)",
-        "time": ""
-    },
-    {
-        "date": "04/05/2017",
-        "url": "http://www.cinefamily.org/films/fight-the-power?time=past#tickling-giants-w-sara-taksler-and-bassem-youssef-in-person",
-        "title": "Tickling Giants (Off-site at the Vista, w/ Larry Wilmore, Bassem Youssef, and Sara Taksler in person!) ",
-        "time": ""
-    },
-    {
-        "date": "04/06/2017",
-        "url": "http://www.cinefamily.org/films/special-events-april-2017?time=past#the-black-power-mixtape-1967-1975-encore",
-        "title": "The Black Power Mixtape 1967-1975 (encore!)",
-        "time": ""
-    },
-    {
-        "date": "04/06/2017",
-        "url": "http://www.cinefamily.org/films/donnie-darko?time=past#donnie-darko-5",
-        "title": "Donnie Darko (director's cut)",
-        "time": ""
-    },
-    {
-        "date": "04/07/2017",
-        "url": "http://www.cinefamily.org/films/?time=past#private-rental-16",
-        "title": "Private Rental",
-        "time": ""
-    },
-    {
-        "date": "04/08/2017",
-        "url": "http://www.cinefamily.org/films/?time=past#private-rental-17",
-        "title": "Private Rental",
-        "time": ""
-    },
-    {
-        "date": "04/09/2017",
-        "url": "http://www.cinefamily.org/films/special-events-april-2017?time=past#adalen-31-encore",
-        "title": "Adalen 31 (encore!)",
-        "time": ""
-    },
-    {
-        "date": "04/09/2017",
-        "url": "http://www.cinefamily.org/films/la-collectionneuse?time=past#sans-soleil",
-        "title": "Sans Soleil",
-        "time": ""
-    },
-    {
-        "date": "04/09/2017",
-        "url": "http://www.cinefamily.org/films/special-events-april-2017?time=past#pink-floyd-the-wall-encore",
-        "title": "Pink Floyd: The Wall (encore!)",
-        "time": ""
-    },
-    {
-        "date": "04/10/2017",
-        "url": "http://www.cinefamily.org/films/?time=past#private-rental-18",
-        "title": "Private Rental",
-        "time": ""
-    },
-    {
-        "date": "04/11/2017",
-        "url": "http://www.cinefamily.org/films/?time=past#private-rental-19",
-        "title": "Private Rental",
-        "time": ""
-    },
-    {
-        "date": "04/12/2017",
-        "url": "http://www.cinefamily.org/films/the-greg-proops-film-club?time=past#do-the-right-thing",
-        "title": "Do the Right Thing",
-        "time": ""
-    },
-    {
-        "date": "04/12/2017",
-        "url": "http://www.cinefamily.org/films/special-events-april-2017?time=past#free-fire-free-sneak-peek-w-ben-wheatley-in-person",
-        "title": "Free Fire (Free sneak peek w/ Ben Wheatley in person!)",
-        "time": ""
-    },
-    {
-        "date": "04/13/2017",
-        "url": "http://www.cinefamily.org/films/a-band-and-a-movie?time=past#somewhere-beautiful-with-atom-egoyan-albert-kodagolian-in-person-avi-buffalo-live",
-        "title": "Somewhere Beautiful (with Atom Egoyan, Albert Kodagolian in person) + Avi Buffalo & Andrea Silva live!",
-        "time": ""
-    },
-    {
-        "date": "04/14/2017",
-        "url": "http://www.cinefamily.org/films/david-lynch?time=past#david-lynch-the-art-life",
-        "title": "David Lynch: The Art Life",
-        "time": ""
-    },
-    {
-        "date": "04/14/2017",
-        "url": "http://www.cinefamily.org/films/special-events-april-2017?time=past#subject-los-angeles-off-site-at-the-bob-baker-marionette-theater",
-        "title": "Subject: Los Angeles (off-site at the Bob Baker Marionette theater)",
-        "time": ""
-    },
-    {
-        "date": "04/14/2017",
-        "url": "http://www.cinefamily.org/films/david-lynch?time=past#david-lynch-the-art-life-9",
-        "title": "David Lynch: The Art Life",
-        "time": ""
-    },
-    {
-        "date": "04/14/2017",
-        "url": "http://www.cinefamily.org/films/friday-night-frights?time=past#king-kong",
-        "title": "King Kong",
-        "time": ""
-    },
-    {
-        "date": "04/15/2017",
-        "url": "http://www.cinefamily.org/films/the-silent-treatment?time=past#three-ages",
-        "title": "Three Ages (new restoration!)",
-        "time": ""
-    },
-    {
-        "date": "04/15/2017",
-        "url": "http://www.cinefamily.org/films/david-lynch?time=past#david-lynch-the-art-life-2",
-        "title": "David Lynch: The Art Life",
-        "time": ""
-    },
-    {
-        "date": "04/15/2017",
-        "url": "http://www.cinefamily.org/films/special-events-april-2017?time=past#get-high-watch-wrestling-with-ron-funches-x-pac",
-        "title": " Get High Watch Wrestling with Ron Funches & X-Pac",
-        "time": ""
-    },
-    {
-        "date": "04/15/2017",
-        "url": "http://www.cinefamily.org/films/rock-n-roll-fascism?time=past#wild-in-the-streets",
-        "title": "Wild in the Streets",
-        "time": ""
-    },
-    {
-        "date": "04/16/2017",
-        "url": "http://www.cinefamily.org/films/david-lynch?time=past#david-lynch-the-art-life-3",
-        "title": "David Lynch: The Art Life",
-        "time": ""
-    },
-    {
-        "date": "04/16/2017",
-        "url": "http://www.cinefamily.org/films/david-lynch?time=past#david-lynch-the-art-life-10",
-        "title": "David Lynch: The Art Life",
-        "time": ""
-    },
-    {
-        "date": "04/16/2017",
-        "url": "http://www.cinefamily.org/films/donnie-darko?time=past#donnie-darko-theatrical-cut",
-        "title": "Donnie Darko (theatrical cut)",
-        "time": ""
-    },
-    {
-        "date": "04/17/2017",
-        "url": "http://www.cinefamily.org/films/donnie-darko?time=past#donnie-darko-theatrical-cut-2",
-        "title": "Donnie Darko (theatrical cut)",
-        "time": ""
-    },
-    {
-        "date": "04/17/2017",
-        "url": "http://www.cinefamily.org/films/david-lynch?time=past#david-lynch-the-art-life-4",
-        "title": "David Lynch: The Art Life",
-        "time": ""
-    },
-    {
-        "date": "04/18/2017",
-        "url": "http://www.cinefamily.org/films/special-events-april-2017?time=past#denis-villeneuves-polytechnique-free-w-rsvp",
-        "title": "Denis Villeneuve’s Polytechnique (Free w/ RSVP)",
-        "time": ""
-    },
-    {
-        "date": "04/18/2017",
-        "url": "http://www.cinefamily.org/films/david-lynch?time=past#david-lynch-the-art-life-5",
-        "title": "David Lynch: The Art Life",
-        "time": ""
-    },
-    {
-        "date": "04/19/2017",
-        "url": "http://www.cinefamily.org/films/special-events-april-2017?time=past#national-canadian-film-day-free-w-rsvp-denis-villeneuve-in-person",
-        "title": "National Canadian Film Day (Free w/ RSVP! Denis Villeneuve in person!)",
-        "time": ""
-    },
-    {
-        "date": "04/20/2017",
-        "url": "http://www.cinefamily.org/films/david-lynch?time=past#david-lynch-the-art-life-7",
-        "title": "David Lynch: The Art Life",
-        "time": ""
-    },
-    {
-        "date": "04/20/2017",
-        "url": "http://www.cinefamily.org/films/special-events-april-2017?time=past#hot-fuzz-10th-anniversary-at-the-vista-edgar-wright-in-person",
-        "title": "Hot Fuzz 10th Anniversary at the Vista w/ Point Break!",
-        "time": ""
-    },
-    {
-        "date": "04/20/2017",
-        "url": "http://www.cinefamily.org/films/special-events-april-2017?time=past#420-bug-out-phase-iv",
-        "title": "4/20 BUG OUT: Phase IV",
-        "time": ""
-    },
-    {
-        "date": "04/20/2017",
-        "url": "http://www.cinefamily.org/films/animation-breakdown?time=past#fantastic-animation-festival-1977",
-        "title": "ABD 4/20 Party: Fantastic Animation Festival (1977)",
-        "time": ""
-    },
-    {
-        "date": "04/21/2017",
-        "url": "http://www.cinefamily.org/films/fight-the-power?time=past#the-battle-of-algiers",
-        "title": "The Battle of Algiers",
-        "time": ""
-    },
-    {
-        "date": "04/21/2017",
-        "url": "http://www.cinefamily.org/films/david-lynch?time=past#eraserhead",
-        "title": "Eraserhead",
-        "time": ""
-    },
-    {
-        "date": "04/22/2017",
-        "url": "http://www.cinefamily.org/films/rock-n-roll-fascism?time=past#the-apple",
-        "title": "The Apple",
-        "time": ""
-    },
-    {
-        "date": "04/23/2017",
-        "url": "http://www.cinefamily.org/films/david-lynch?time=past#the-early-short-films-of-david-lynch",
-        "title": "The Early Short Films of David Lynch",
-        "time": ""
-    },
-    {
-        "date": "04/23/2017",
-        "url": "http://www.cinefamily.org/films/david-lynch?time=past#david-lynch-the-art-life-8",
-        "title": "David Lynch: The Art Life",
-        "time": ""
-    },
-    {
-        "date": "04/24/2017",
-        "url": "http://www.cinefamily.org/films/fight-the-power?time=past#norma-rae",
-        "title": "Norma Rae",
-        "time": ""
-    },
-    {
-        "date": "04/24/2017",
-        "url": "http://www.cinefamily.org/films/david-lynch?time=past#eraserhead-2",
-        "title": "Eraserhead",
-        "time": ""
-    },
-    {
-        "date": "04/25/2017",
-        "url": "http://www.cinefamily.org/films/david-lynch?time=past#the-early-short-films-of-david-lynch-2",
-        "title": "The Early Short Films of David Lynch",
-        "time": ""
-    },
-    {
-        "date": "04/26/2017",
-        "url": "http://www.cinefamily.org/films/special-events-april-2017?time=past#ptit-quinquin-with-bruno-dumont-in-person",
-        "title": "Li'l Quinquin (Los Angeles premiere with Bruno Dumont in person!)",
-        "time": ""
-    },
-    {
-        "date": "04/27/2017",
-        "url": "http://www.cinefamily.org/films/special-events-april-2017#la-vie-de-jesus-with-bruno-dumont-in-person",
-        "title": "La Vie de Jésus (with Bruno Dumont in person!)",
-        "time": "7:30 PM"
-    },
-    {
-        "date": "04/27/2017",
-        "url": "http://www.cinefamily.org/films/animation-breakdown#autarky",
-        "title": "Autarky! Frontier Animation from CalArts",
+        "date": "05/06/2017",
+        "url": "http://www.cinefamily.org/films/rock-n-roll-fascism#privilege",
+        "title": "Privilege",
         "time": "10:30 PM"
     },
     {
-        "date": "04/28/2017",
-        "url": "http://www.cinefamily.org/films/fight-the-power#sympathy-for-the-devil",
-        "title": "Sympathy for the Devil",
-        "time": "7:30 PM"
-    },
-    {
-        "date": "04/28/2017",
-        "url": "http://www.cinefamily.org/films/special-events-april-2017#subject-los-angeles-in-the-streets",
-        "title": "Subject: Los Angeles in the Streets (off-site at the Bob Baker Marionette Theater)",
-        "time": "8:00 PM"
-    },
-    {
-        "date": "04/28/2017",
-        "url": "http://www.cinefamily.org/films/david-lynch#david-lynch-the-art-life-11",
-        "title": "David Lynch: The Art Life",
-        "time": "10:00 PM"
-    },
-    {
-        "date": "04/28/2017",
-        "url": "http://www.cinefamily.org/films/friday-night-frights#body-bags",
-        "title": "Body Bags (w/ producer Sandy King Carpenter in person!)",
-        "time": "MIDNITE"
-    },
-    {
-        "date": "04/29/2017",
-        "url": "http://www.cinefamily.org/films/fight-the-power#how-to-survive-a-plague-with-act-up-member-maria-maggenti-in-person",
-        "title": "How to Survive a Plague (with ACT UP member Maria Maggenti in person!)",
+        "date": "05/07/2017",
+        "url": "http://www.cinefamily.org/films/no-great-women-artists#je-tu-il-elle",
+        "title": "Je, tu, il, elle",
         "time": "6:00 PM"
     },
     {
-        "date": "04/29/2017",
-        "url": "http://www.cinefamily.org/films/fight-the-power#animal-farm-off-site-at-the-bob-baker-marionette-theater",
-        "title": "Animal Farm (off-site at the Bob Baker Marionette Theater)",
+        "date": "05/08/2017",
+        "url": "http://www.cinefamily.org/films/no-great-women-artists#jeanne-dielman-23-quai-du-commerce-1080-bruxelles-2",
+        "title": "Jeanne Dielman, 23 Quai du Commerce, 1080 Bruxelles",
         "time": "7:30 PM"
     },
     {
-        "date": "04/29/2017",
-        "url": "http://www.cinefamily.org/films/special-events-april-2017#super-tight-1-year-anniversary",
-        "title": "Super Tight 2 Year Anniversary ",
+        "date": "05/10/2017",
+        "url": "http://www.cinefamily.org/films/special-events-may-2017#beatriz-at-dinner-free-sneak-peek-with-director-miguel-arteta-cast-in-person",
+        "title": " Beatriz at Dinner (Free sneak peek with director Miguel Arteta & cast in person!)",
+        "time": "7:30 PM"
+    },
+    {
+        "date": "05/11/2017",
+        "url": "http://www.cinefamily.org/films/cinefamily-editions-presents#dr-strangelove-or-how-i-learned-to-stop-worrying-and-love-the-bomb",
+        "title": "Dr. Strangelove or: How I Learned to Stop Worrying and Love the Bomb",
+        "time": "7:30 PM"
+    },
+    {
+        "date": "05/11/2017",
+        "url": "http://www.cinefamily.org/films/fight-the-power#the-spook-who-sat-by-the-door",
+        "title": "The Spook Who Sat by the Door",
         "time": "10:00 PM"
     },
     {
-        "date": "04/30/2017",
-        "url": "http://www.cinefamily.org/films/special-events-april-2017#i-love-dick-the-complete-series-with-jill-soloway-kathryn-hahn-chris-kraus-in-person",
-        "title": "I Love Dick: The Complete Series (with Jill Soloway, Kathryn Hahn & Chris Kraus in person)",
-        "time": "12:00 PM"
+        "date": "05/12/2017",
+        "url": "http://www.cinefamily.org/films/fight-the-power#born-in-flames-w-lizzie-borden-in-person",
+        "title": "Born in Flames (w/ Lizzie Borden and Adele Bertei person!)",
+        "time": "7:30 PM"
     },
     {
-        "date": "04/30/2017",
-        "url": "http://www.cinefamily.org/films/animation-breakdown#seeing-sound-mary-ellen-bute-retrospective",
-        "title": "Seeing Sound: Mary Ellen Bute Retrospective",
+        "date": "05/12/2017",
+        "url": "http://www.cinefamily.org/films/friday-night-frights#leatherface-texas-chainsaw-massacre-iii",
+        "title": "Leatherface: Texas Chainsaw Massacre III",
+        "time": "MIDNITE"
+    },
+    {
+        "date": "05/13/2017",
+        "url": "http://www.cinefamily.org/films/the-silent-treatment#tokyo-chorus",
+        "title": "Tokyo Chorus",
+        "time": "2:00 PM"
+    },
+    {
+        "date": "05/13/2017",
+        "url": "http://www.cinefamily.org/films/special-events-may-2017#here-come-the-videofreex-with-director-jon-nealon-videofreex-member-skip-blumberg-in-person",
+        "title": "Here Come the Videofreex (with director Jon Nealon & Videofreex member Skip Blumberg in person!)",
+        "time": "6:00 PM"
+    },
+    {
+        "date": "05/13/2017",
+        "url": "http://www.cinefamily.org/films/special-events-may-2017#mondo-public-access",
+        "title": "Cinefamily Public Access Mixtape",
+        "time": "9:00 PM"
+    },
+    {
+        "date": "05/16/2017",
+        "url": "http://www.cinefamily.org/films/deeper-into-movies#durga-chew-bose-presents-everyone-else",
+        "title": "Durga Chew-Bose presents Everyone Else",
+        "time": "7:30 PM"
+    },
+    {
+        "date": "05/19/2017",
+        "url": "http://www.cinefamily.org/films/special-events-may-2017#the-salesman",
+        "title": "The Salesman",
+        "time": "7:30 PM"
+    },
+    {
+        "date": "05/19/2017",
+        "url": "http://www.cinefamily.org/films/friday-night-frights#the-silence-of-the-lambs",
+        "title": "The Silence of the Lambs",
+        "time": "MIDNITE"
+    },
+    {
+        "date": "05/20/2017",
+        "url": "http://www.cinefamily.org/films/animation-breakdown#saturday-morning-cartoons-america",
+        "title": "Saturday Morning Cartoons: America",
+        "time": "11:00 AM"
+    },
+    {
+        "date": "05/20/2017",
+        "url": "http://www.cinefamily.org/films/special-events-may-2017#omar-with-actor-waleed-zuaiter-in-person",
+        "title": "Omar (with actor Waleed Zuaiter in person!)",
         "time": "7:00 PM"
     },
     {
-        "date": "04/30/2017",
-        "url": "http://www.cinefamily.org/films/david-lynch#david-lynch-the-art-life-12",
-        "title": "David Lynch: The Art Life",
-        "time": "10:00 PM"
+        "date": "05/25/2017",
+        "url": "http://www.cinefamily.org/films/cinefamily-editions-presents#messiah-of-evil",
+        "title": "Messiah of Evil",
+        "time": "7:30 PM"
+    },
+    {
+        "date": "05/26/2017",
+        "url": "http://www.cinefamily.org/films/special-events-may-2017#get-high-watch-wrestling-with-ron-funches-x-pac-2",
+        "title": "Get High Watch Wrestling with Ron Funches & X-Pac",
+        "time": "10:30 PM"
+    },
+    {
+        "date": "05/29/2017",
+        "url": "http://www.cinefamily.org/films/special-events-may-2017#the-five-minutes-game-2017-edition",
+        "title": "The Five Minutes Game: 2017 Edition",
+        "time": "5:00 PM"
+    },
+    {
+        "date": "06/02/2017",
+        "url": "http://www.cinefamily.org/films/funeral-parade#funeral-parade-of-roses",
+        "title": "Funeral Parade of Roses",
+        "time": "7:30 PM"
+    },
+    {
+        "date": "06/03/2017",
+        "url": "http://www.cinefamily.org/films/funeral-parade#funeral-parade-of-roses-2",
+        "title": "Funeral Parade of Roses",
+        "time": "8:00 PM"
+    },
+    {
+        "date": "06/04/2017",
+        "url": "http://www.cinefamily.org/films/funeral-parade#funeral-parade-of-roses-3",
+        "title": "Funeral Parade of Roses",
+        "time": "8:00 PM"
+    },
+    {
+        "date": "06/05/2017",
+        "url": "http://www.cinefamily.org/films/funeral-parade#funeral-parade-of-roses-4",
+        "title": "Funeral Parade of Roses",
+        "time": "7:30 PM"
+    },
+    {
+        "date": "06/06/2017",
+        "url": "http://www.cinefamily.org/films/funeral-parade#funeral-parade-of-roses-5",
+        "title": "Funeral Parade of Roses",
+        "time": "7:30 PM"
+    },
+    {
+        "date": "06/07/2017",
+        "url": "http://www.cinefamily.org/films/funeral-parade#funeral-parade-of-roses-6",
+        "title": "Funeral Parade of Roses",
+        "time": "4:30 PM"
+    },
+    {
+        "date": "06/08/2017",
+        "url": "http://www.cinefamily.org/films/funeral-parade#funeral-parade-of-roses-7",
+        "title": "Funeral Parade of Roses",
+        "time": "4:30 PM"
+    },
+    {
+        "date": "06/08/2017",
+        "url": "http://www.cinefamily.org/films/cinefamily-editions-presents#fox-and-his-friends",
+        "title": "Fox and His Friends",
+        "time": "7:30 PM"
     }
 ]

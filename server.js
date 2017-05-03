@@ -1,272 +1,57 @@
 var express = require('express');
-var fs = require('fs');
-var request = require('request');
-var cheerio = require('cheerio');
+var scrapes = require('./services');
 var app     = express();
-var moment = require('moment');
-var admin = require("firebase-admin");
-var Horseman = require('node-horseman');
-var Q = require('Q');
+var mail = require('./mail.js');
+var batch = require('./batchJob');
+var cron = require('node-cron');
+ 
+ cron.schedule('46 * * * *', batch.runBatch());
+
+
 
 
 app.get('/scrape', function(req, res){
+    // var ntasks_left_to_go = 4;
+    
+    // var callback = function(){
+        
+    //     // ntasks_left_to_go -= 1;
+    //     // if(ntasks_left_to_go <= 0){
+    //     //      console.log('All tasks have completed. Do your stuff');
+    //     //      finish();
+    //     // }
 
-   url = 'http://www.lacma.org/events-calendar?tid=68';
+    //      tasks.shift();
+    //      if(tasks.length <= 0){
+    //         console.log('All tasks have completed. Do your stuff');
+    //         finish();
+    //         return;
+    //         }
 
-    request(url, function(error, response, html){
+    //      scrapes[tasks[0]](writeDB, callback);
+    // }
 
-        if(!error){
 
-                var $ = cheerio.load(html);
 
-                var result = [];
-                $('div.events').filter(function(){
-                    var json = {};
-                    var data = $(this);
+    // var result = scrapes[tasks[0]](writeDB, callback);
+    // var result = scrapes.makeRequestEgyptian(false, callback);
+    // var result = scrapes.makeRequestAero(false, callback);
+    // var result = scrapes.makeRequestCineFamily(false, callback);
 
-                    json.date = data.find('h4').first().text();
-
-                        var titleAndUrlNode = data.find('a.title');
-
-                        var title = titleAndUrlNode.first().contents().filter(function() {
-                            return this.type === 'text';
-                        }).text();
-                        json.title = title.trim();
-
-                        json.url = "http://www.lacma.org/" + titleAndUrlNode.attr('href');
-
-                        var timeDate = data.find('div.details').first().text().replace(/[|_]/g,'').trim().split("  ");
-
-                        json.time = moment(timeDate[0].trim(), 'hh:mm A').format('hh:mm A');
-                        json.date = moment(timeDate[1].trim(), 'ddd, MMM D, YYYY').format('MM/DD/YYYY');
-                        json.timeDate = timeDate;
-                        result.push(json);
-                })
-
-            }
-            fs.writeFile('output.json', JSON.stringify(result, null, 4), function(err){
-
-                console.log('File successfully written! - Check your project directory for the output.json file');
-
-            })
-
-            // Finally, we'll just send out a message to the browser reminding you that this app does not have a UI.
-            res.send('Check your console!')
-
-            var serviceAccount = require("mabuse-57164-firebase-adminsdk-gpl49-9ecec6dc84.json");
-
-            admin.initializeApp({
-            credential: admin.credential.cert(serviceAccount),
-            databaseURL: "https://mabuse-57164.firebaseio.com"
-            });
-
-            var db = admin.database();
-            var ref = db.ref("Theaters");
-
-            var usersRef = ref.child("Lacma");
-            usersRef.set(result);
-    })
+    // function finish (){
+    //     // mail.sendMail();
+    //     res.send("finished. check log.");
+    // }
 })
 
 app.get('/scrape2', function(req, res){
- url = 'http://www.americancinemathequecalendar.com/calendar_egyptian';
-
-    request(url, function(error, response, html){
-
-        if(!error){
-
-                var $ = cheerio.load(html);
-
-                var result = [];
-                $('div.month-view td').filter(function(){
-                    var json = {};
-                    var data = $(this);
-                    // result.push(data);
-                    // console.log(data);
-
-                    if (!data.hasClass("empty")){
-
-                    var date = moment(data.attr('id').replace('calendar-', ''),'YYYY-MM-DD').format('MM/DD/YYYY');
-                        // console.log(date);
-
-                        $(data).find('.inner .view-item').filter(function(){
-
-                            var item = $(this).find(".view-field a");
-                            json.date = date;
-                            json.url = 'http://www.americancinemathequecalendar.com' + item.attr("href");
-                            json.title = item.text();
-                            json.time = $(this).find(".date-display-single").text();
-                        // console.log(json);
-                            result.push(json);
-                            json = {};
-                        });
-
-
-                    }
-
-
-
-
-                })
-
-            }
-            fs.writeFile('output.json', JSON.stringify(result, null, 4), function(err){
-
-                console.log('File successfully written! - Check your project directory for the output.json file');
-
-            })
-
-            // Finally, we'll just send out a message to the browser reminding you that this app does not have a UI.
-            res.send('Check your console!')
-
-            var serviceAccount = require("mabuse-57164-firebase-adminsdk-gpl49-9ecec6dc84.json");
-
-            admin.initializeApp({
-            credential: admin.credential.cert(serviceAccount),
-            databaseURL: "https://mabuse-57164.firebaseio.com"
-        });
-
-            var db = admin.database();
-            var ref = db.ref("Theaters");
-
-            var usersRef = ref.child("Egyptian Theater");
-            usersRef.set(result);
-    })
-
 })
 
 app.get('/scrape3', function(req, res){
- url = 'http://www.americancinemathequecalendar.com/calendar_aero';
-
-    request(url, function(error, response, html){
-
-        if(!error){
-
-                var $ = cheerio.load(html);
-
-                var result = [];
-                $('div.month-view td').filter(function(){
-                    var json = {};
-                    var data = $(this);
-                    // result.push(data);
-                    // console.log(data);
-
-                    if (!data.hasClass("empty")){
-
-                    var date = moment(data.attr('id').replace('calendar-', ''),'YYYY-MM-DD').format('MM/DD/YYYY');
-                        // console.log(date);
-
-                        $(data).find('.inner .view-item').filter(function(){
-
-                            var item = $(this).find(".view-field a");
-                            json.date = date;
-                            json.url = 'http://www.americancinemathequecalendar.com' + item.attr("href");
-                            json.title = item.text();
-                            json.time = $(this).find(".date-display-single").text();
-                        // console.log(json);
-                            result.push(json);
-                            json = {};
-                        });
-
-
-                    }
-
-
-
-
-                })
-
-            }
-            fs.writeFile('output.json', JSON.stringify(result, null, 4), function(err){
-
-                console.log('File successfully written! - Check your project directory for the output.json file');
-
-            })
-
-            // Finally, we'll just send out a message to the browser reminding you that this app does not have a UI.
-            res.send('Check your console!')
-
-            var serviceAccount = require("mabuse-57164-firebase-adminsdk-gpl49-9ecec6dc84.json");
-
-            admin.initializeApp({
-            credential: admin.credential.cert(serviceAccount),
-            databaseURL: "https://mabuse-57164.firebaseio.com"
-        });
-
-            var db = admin.database();
-            var ref = db.ref("Theaters");
-
-            var usersRef = ref.child("Aero Theater");
-            usersRef.set(result);
-    })
-
 })
 
 
 app.get('/scrape4', function(req, res){
- url = 'http://www.cinefamily.org/#calendar';
-    var horseman = new Horseman({timeout: 50000});
-                var result = [];
-
-        horseman
-        .open(url)
-        .html()
-        .then(parsePage)
-        .click("div[id='EC_nextMonthLarge]'")
-        .waitForNextPage()
-        .html()
-        .then(parsePage)
-        .finally(function (){
-
-            horseman.close();
-
-            fs.writeFile('output.json', JSON.stringify(result, null, 4), function(err){
-
-                console.log('File successfully written! - Check your project directory for the output.json file');
-
-            })
-
-            // Finally, we'll just send out a message to the browser reminding you that this app does not have a UI.
-            writeToFile(result);
-
-            //Finally, we'll just send out a message to the browser reminding you that this app does not have a UI.
-            res.send('Check your console!');
-            // writeToDB(result, "Cinefamily");
-        });
-
-        function parsePage(html){
-
-                var $ = cheerio.load(html);
-
-                $('#wp-calendarLarge td').filter(function(){
-
-                    var json = {};
-                    var data = $(this);
-                    var currentDate = moment();
-                    var currentMonth = currentDate.format('MM');
-                    var currentYear = currentDate.format('YYYY');
-
-                    var date = moment(currentMonth + "/" + data.find('div.dayHead').text() + "/" + currentYear,'MM/DD/YYYY').format('MM/DD/YYYY');
-
-                        data.find('span.event-block').filter(function(){
-                            var item = $(this).find(".EC-tt-title-link");
-                            json.date = date;
-                            json.url = item.attr("href");
-                            json.title = item.text();
-                            json.time = $(this).find("small").text();
-
-                        if(json.date != ""){
-                            result.push(json);
-                        }
-                            json = {};
-                        });
-                    }
-                )
-
-        }
-
-
-
 })
 
 app.get('/scrape5', function(req, res){
@@ -761,8 +546,8 @@ app.get('/scrape13', function(req, res){
 app.get('/scrape14', function(req, res){
         url = 'http://www.echoparkfilmcenter.org/calendar/?category=3';
             var horseman = new Horseman({timeout: 50000});
-        var $links = [];
-        var scrapedData = [];
+            var $links = [];
+            var scrapedData = [];
 
             horseman
             .open(url)
@@ -865,7 +650,6 @@ app.get('/scrape14', function(req, res){
         }
 })
 
-
 app.get('/', function (req, res){
 
     res.send('main page')
@@ -913,6 +697,10 @@ function getDateWithDeterminedYear (date, pattern = null){
 
   return result;
 }
+
+
+
+ 
 
 
 exports = module.exports = app;
