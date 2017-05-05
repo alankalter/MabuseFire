@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>MabuseFireComm</title>
+  <meta name="description" content="control for MabuseFire">
+  <!--[if lt IE 9]>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
+  <![endif]-->
+</head>
+
+<body>
+    <h2>Logs</h2>
+    <div>
+      <div><a href="/log" target="_blank">view log</a></div>
+      <div><a href="/clearlog" target="_blank">clear log</a></div>
+    </div>
+    <h2>Jobs</h2>
+      <div><a href="/batch" target="_blank">run all</a></div>
+      <br/>
+      <% jobs.forEach(function(job, idx) { %>
+          <div><a href="/singlejob/<%= idx %>" target="_blank"><%= job %></a></div>
+      <% }); %>
+</body>
+</html>

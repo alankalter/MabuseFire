@@ -1,4 +1,3 @@
-var fs = require('fs');
 var cheerio = require('cheerio');
 var moment = require('moment');
 var Horseman = require('node-horseman');
@@ -33,9 +32,7 @@ function makeRequestLacma (writeToDb, callback) {
 
             horseman.close();
             logger.info('RESULT ARRAY');
-            logger.info(result);
-            
-            writeToFile(result);
+            logger.info(result);            
             
             if (writeToDb){
                 db.writeToDB(result, "Lacma");
@@ -116,7 +113,7 @@ function makeRequestEgyptian (writeToDb, callback){
                     logger.info('RESULT ARRAY');
                     logger.info(result);
                     
-                    writeToFile(result);
+                    
                     
                     if (writeToDb){
                         db.writeToDB(result, "Egyptian Theater");
@@ -136,6 +133,7 @@ function makeRequestEgyptian (writeToDb, callback){
             
 
         function parsePage(html){
+        try {
             var $ = cheerio.load(html);
 
             $('div.month-view td').filter(function(){
@@ -160,13 +158,18 @@ function makeRequestEgyptian (writeToDb, callback){
                         });
                     }
                 })
+
+                }
+        catch(err) {
+            logger.error("parser error!")
+            logger.error(err);
+
+        }
             }
 
 }
 
-function makeRequestAero (writeToDb, callback){
-
- 
+function makeRequestAero (writeToDb, callback){ 
 
             try {
                 logger.info("beginning Aero Request/parse");
@@ -192,7 +195,7 @@ function makeRequestAero (writeToDb, callback){
                     logger.info('RESULT ARRAY');
                     logger.info(result);
                     
-                    writeToFile(result);
+                    
                     
                     if (writeToDb){
                         db.writeToDB(result, "Aero Theater");
@@ -212,6 +215,7 @@ function makeRequestAero (writeToDb, callback){
             
 
         function parsePage(html){
+            try {
             var $ = cheerio.load(html);
 
             $('div.month-view td').filter(function(){
@@ -236,6 +240,12 @@ function makeRequestAero (writeToDb, callback){
                         });
                     }
                 })
+                }
+            catch(err) {
+                logger.error("parser error!")
+                logger.error(err);
+
+            }
             }
 
 }
@@ -264,8 +274,6 @@ function makeRequestCineFamily(writeToDb, callback){
                     horseman.close();
                     logger.info('RESULT ARRAY');
                     logger.info(result);
-                    
-                    writeToFile(result);
                     
                     if (writeToDb){
                         db.writeToDB(result, "Cinefamily");
@@ -312,55 +320,87 @@ function makeRequestCineFamily(writeToDb, callback){
         }
 }
 
+function makeRequestNewBeverly(writeToDb, callback){
+        
+    try {
+        logger.info("beginning New Beverly Request/parse");
 
+        url = 'http://thenewbev.com/schedule/';
+        var horseman = new Horseman();
+        var result = [];
 
+        horseman
+        .open(url)
+        .html()
+        .then(parsePage)
+        .finally(function (){
 
-function writeToFile (resultArr){
-    if (resultArr.length > 0){
-    fs.writeFile('output.json', JSON.stringify(resultArr, null, 4), function(err){
-                    if (err){
-                        console.log(err);
-                        logger.error(err);
+                    horseman.close();
+                    logger.info('RESULT ARRAY');
+                    logger.info(result);
+                    
+                    if (writeToDb){
+                        db.writeToDB(result, "New Beverly");
                     }
-                    else{
-                    logger.info('File successfully written');
-                    console.log('File successfully written!');
-                    }
-                })
+                    logger.info("ending New Beverly Request/parse");
+                    
+                    
+                    callback();            
+        });
     }
-    else {
-        logger.error('empty result array, no file written');
+    catch (err){
+        logger.error("horseman block error!");
+        if (err) logger.error(err);
+    }
+
+    function parsePage(html){
+
+            try {
+                var $ = cheerio.load(html);
+
+                $('.event-card').filter(function(){
+
+                    var json = {};
+                    var data = $(this);
+
+                    var month = data.find('.event-card__month').text();
+                    var day = data.find('.event-card__numb').text();
+                    var year = data.closest('.calendar-month').find('h2').text().split(' ')[1];
+
+                    var date = moment(month + "/" + day + "/" + year,'MMMM/DD/YYYY').format('MM/DD/YYYY');
+                    var url = data.find('a').attr('href');
+
+                    var titles = data.find('.event-card__title').text().replace('\n', '').split('/');
+                    var times = [];
+                    data.find(".event-card__time").filter(function(){
+                        times.push($(this).text());
+                    });
+
+                        for (let i = 0; i < times.length; i++){
+                                json.title = titles[i].trim();
+                                json.time = times[i];
+
+
+                                json.date = date;
+                                json.url = url;
+                                result.push(json);
+                                json = {};
+                        }
+                    }
+                )
+                }
+            catch(err) {
+                logger.error("parser error!")
+                logger.error(err);
+
+            }
     }
 }
 
-
-function getDateWithDeterminedYear (date, pattern = null){
-
-  var current = new moment();
-  var currentMonth = current.month();
-  var dateObj = new moment(date, pattern).year(current.year());
-  var dateMonth = dateObj.month();
-
-  var result = dateObj;
-
-    if((dateMonth < currentMonth)){
-            result = dateObj.add(1, 'year');
-    }
-
-  return result;
-}
-
-var allJobs =
-[
-"makeRequestLacma",
-"makeRequestEgyptian",
-"makeRequestAero",
-"makeRequestCineFamily"
-];
 
 module.exports.makeRequestLacma = makeRequestLacma; 
 module.exports.makeRequestEgyptian = makeRequestEgyptian;
 module.exports.makeRequestAero = makeRequestAero;
 module.exports.makeRequestCineFamily = makeRequestCineFamily;
-module.exports.allJobs = allJobs;
+module.exports.makeRequestNewBeverly = makeRequestNewBeverly;
 

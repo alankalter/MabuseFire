@@ -2,130 +2,38 @@ var express = require('express');
 var scrapes = require('./services');
 var app     = express();
 var mail = require('./mail.js');
-var batch = require('./batchJob');
+var job = require('./job');
 var cron = require('node-cron');
+var fs = require('fs');
  
- cron.schedule('46 * * * *', batch.runBatch());
+ cron.schedule('0 45 11 * * *', job.runBatch(function(){console.log("jobs finished");}));
 
+app.set('view engine', 'ejs');
 
-
-
-app.get('/scrape', function(req, res){
-    // var ntasks_left_to_go = 4;
+app.get('/', function (req, res){
     
-    // var callback = function(){
-        
-    //     // ntasks_left_to_go -= 1;
-    //     // if(ntasks_left_to_go <= 0){
-    //     //      console.log('All tasks have completed. Do your stuff');
-    //     //      finish();
-    //     // }
-
-    //      tasks.shift();
-    //      if(tasks.length <= 0){
-    //         console.log('All tasks have completed. Do your stuff');
-    //         finish();
-    //         return;
-    //         }
-
-    //      scrapes[tasks[0]](writeDB, callback);
-    // }
-
-
-
-    // var result = scrapes[tasks[0]](writeDB, callback);
-    // var result = scrapes.makeRequestEgyptian(false, callback);
-    // var result = scrapes.makeRequestAero(false, callback);
-    // var result = scrapes.makeRequestCineFamily(false, callback);
-
-    // function finish (){
-    //     // mail.sendMail();
-    //     res.send("finished. check log.");
-    // }
+    res.render('index', {jobs: job.allJobs});
 })
 
-app.get('/scrape2', function(req, res){
+app.get('/singlejob/:jobId', function (req, res) {
+    
+    job.runJob(req.params["jobId"], function(){res.send("job finished");})
 })
 
-app.get('/scrape3', function(req, res){
+app.get('/batch', function (req, res) {
+
+    job.runBatch(function(){res.send("jobs finished");});
 })
 
+app.get('/log', function (req, res){
 
-app.get('/scrape4', function(req, res){
+    res.sendFile('./logs/mabuseFire.log', { root : __dirname});
 })
 
-app.get('/scrape5', function(req, res){
- url = 'http://thenewbev.com/schedule/';
-    var horseman = new Horseman();
-                var result = [];
+app.get('/clearlog', function(req, res){
 
-        horseman
-        .open(url)
-        .html()
-        .then(function(html){
-
-                var $ = cheerio.load(html);
-
-                $('.event-card').filter(function(){
-
-                    var json = {};
-                    var data = $(this);
-
-                    var month = data.find('.event-card__month').text();
-                    var day = data.find('.event-card__numb').text();
-                    var year = data.closest('.calendar-month').find('h2').text().split(' ')[1];
-
-                    var date = moment(month + "/" + day + "/" + year,'MMMM/DD/YYYY').format('MM/DD/YYYY');
-                    var url = data.find('a').attr('href');
-
-                    var titles = data.find('.event-card__title').text().replace('\n', '').split('/');
-                    var times = [];
-                    data.find(".event-card__time").filter(function(){
-                        times.push($(this).text());
-                    });
-
-                        for (let i = 0; i < times.length; i++){
-                            json.title = titles[i].trim();
-                            json.time = times[i];
-
-
-                            json.date = date;
-                            json.url = url;
-                            result.push(json);
-                            json = {};
-                        }
-                    }
-                )
-
-        })
-        .finally(function (){
-
-            horseman.close();
-            fs.writeFile('output.json', JSON.stringify(result, null, 4), function(err){
-
-                console.log('File successfully written! - Check your project directory for the output.json file');
-
-            })
-
-            //Finally, we'll just send out a message to the browser reminding you that this app does not have a UI.
-            res.send('Check your console!')
-
-            var serviceAccount = require("mabuse-57164-firebase-adminsdk-gpl49-9ecec6dc84.json");
-
-            admin.initializeApp({
-            credential: admin.credential.cert(serviceAccount),
-            databaseURL: "https://mabuse-57164.firebaseio.com"
-            });
-
-            var db = admin.database();
-            var ref = db.ref("Theaters");
-
-            var usersRef = ref.child("New Beverly");
-            usersRef.set(result);
-        });
-
-
-
+    fs.writeFile('./logs/mabuseFire.log', '', function(){console.log('done')});
+    res.send("clearing log");
 })
 
 app.get('/scrape6', function(req, res){
@@ -650,10 +558,7 @@ app.get('/scrape14', function(req, res){
         }
 })
 
-app.get('/', function (req, res){
 
-    res.send('main page')
-})
 
 app.listen('8081')
 
