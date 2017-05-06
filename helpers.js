@@ -1,3 +1,5 @@
+var moment = require('moment');
+
 
 function getDateWithDeterminedYear (date, pattern = null){
 
@@ -15,4 +17,15 @@ function getDateWithDeterminedYear (date, pattern = null){
   return result;
 }
 
-module.exports.getDateWithDeterminedYear = getDateWithDeterminedYear;
+function timeNow() {
+  var d = new Date(),
+      h = (d.getHours()<10?'0':'') + d.getHours(),
+      m = (d.getMinutes()<10?'0':'') + d.getMinutes();
+      
+      return h + ':' + m;
+}
+
+module.exports = {
+  getDateWithDeterminedYear : getDateWithDeterminedYear,
+  timeNow : timeNow
+}

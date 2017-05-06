@@ -1,24 +1,35 @@
 var mail = require('./mail.js');
 var scrapes = require('./services');
 var fs = require('fs');
+var helpers = require("./helpers");
 
+var allJobs =
+[
+    "Lacma",
+    "Egyptian",
+    "Aero",
+    "CineFamily",
+    "NewBeverly",
+    "RooftopCinemaClub",
+    "UCLAFilmandTV",
+    "SkirballCenter",
+    "EatSeeHear",
+    "Cinespia",
+    "LAFilmForum",
+    "StreetFoodCinema",
+    "SilverLakePictureShow",
+    "EchoParkFilmCenter"
+];
 
 var runBatch = function (cb){
+    var tasks = allJobs;
     console.log('clearing log');
+    var interId = setInterval(function(){ console.log("working " + helpers.timeNow()); }, 30000);
     
     fs.writeFile('./logs/mabuseFire.log', '', function(){console.log('done')});
 
-    console.log('starting batch ' + new Date());
+    console.log('starting batch job ' + new Date());
     var writeDB = true;
-
-    var tasks =
-    [
-    "makeRequestLacma",
-    "makeRequestEgyptian",
-    "makeRequestAero",
-    "makeRequestCineFamily",
-    "makeRequestNewBeverly"    
-    ];
 
     var callback = function(){
             
@@ -30,15 +41,14 @@ var runBatch = function (cb){
             }
 
         scrapes[tasks[0]](writeDB, callback);
-    }
-    
+    }    
 
     var result = scrapes[tasks[0]](writeDB, callback);
-
     
     function finish (){
-        mail.sendMail();
-        console.log("finished job" + new Date());
+        mail.sendMail("Batch");
+        console.log("finished batch job " + new Date());
+        clearInterval(interId);        
         cb();  
         return result;      
     }
@@ -47,9 +57,12 @@ var runBatch = function (cb){
 
 var runJob = function (id, cb){
     console.log('clearing log');
-    fs.writeFile('./logs/mabuseFire.log', '', function(){console.log('done')});
+    var jobName = allJobs[id];
+    var interId = setInterval(function(){ console.log("working " + helpers.timeNow()); }, 30000);
+
+    fs.writeFile('./logs/mabuseFire.log', '', function(){console.log('done log clear')});
     
-    console.log('starting batch ' + new Date());
+    console.log('starting job ' + new Date());
     var writeDB = true;    
 
     var callback = function(){
@@ -57,26 +70,16 @@ var runJob = function (id, cb){
                 return;
     }    
 
-    var result = scrapes[allJobs[id]](writeDB, callback);
+    var result = scrapes[jobName](writeDB, callback);
     
     function finish (){
-        mail.sendMail();
-        console.log("finished job" + new Date());
+        mail.sendMail(jobName);
+        console.log("finished job " + new Date());
+        clearInterval(interId);
         cb();        
     }
 
 };
-
-
-var allJobs =
-[
-"makeRequestLacma",
-"makeRequestEgyptian",
-"makeRequestAero",
-"makeRequestCineFamily",
-"makeRequestNewBeverly"
-];
-
 
 module.exports.runBatch = runBatch;
 module.exports.allJobs = allJobs;

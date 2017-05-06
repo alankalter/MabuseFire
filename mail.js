@@ -13,11 +13,11 @@ let transporter = nodemailer.createTransport({
     }
 });
 
-function sendMail(){            
+function sendMail(jobName){            
             transporter.sendMail({
                 from: '',
                 to: 'mabuselosangeles@gmail.com',
-                subject: 'still testing',
+                subject: jobName + ' Job Run',
                 text: 'log attached!',
                 attachments: [{   // filename and content type is derived from path
                     path: './logs/mabuseFire.log'
