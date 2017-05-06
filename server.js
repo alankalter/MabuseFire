@@ -39,7 +39,7 @@ app.get('/clearlog', function(req, res){
     res.send("clearing log");
 })
 
-var server = app.listen('8081')
+var server = app.listen(process.env.PORT || '8081');
 server.timeout = 500000;
 
 console.log('Magic happens on port 8081');
