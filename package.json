@@ -18,7 +18,7 @@
     "nodemailer": "^4.0.1",
     "phantomjs": "^2.1.7",
     "preboot": "^4.5.2",
-    "q": "^1.5.0",
+    "Q": "^1.5.0",
     "request": "latest"
   }
 }
