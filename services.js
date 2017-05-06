@@ -873,7 +873,6 @@ function StreetFoodCinema (writeToDb, callback){
         }
 }
 
-
 function SilverLakePictureShow (writeToDb, callback){
     try {
         logger.info("beginning SilverLakePictureShow Request/parse");
@@ -1048,8 +1047,6 @@ function EchoParkFilmCenter (writeToDb, callback){
 
         }
 }
-
-
 
 module.exports = {
     Lacma : Lacma, 
