@@ -843,7 +843,7 @@ function StreetFoodCinema (writeToDb, callback){
 
                         return someAsyncFuntionReturningPromise(item);
                     }})
-                .reduce(q.when, Q());
+                .reduce(q.when, q());
 
             return lastResultPromise;
         }
@@ -1015,7 +1015,7 @@ function EchoParkFilmCenter (writeToDb, callback){
 
                         return someAsyncFuntionReturningPromise(item);
                     }})
-                .reduce(q.when, Q());
+                .reduce(q.when, q());
 
             return lastResultPromise;
         }
