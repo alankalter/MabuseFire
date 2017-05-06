@@ -1,7 +1,7 @@
 var cheerio = require('cheerio');
 var moment = require('moment');
 var Horseman = require('node-horseman');
-var Q = require('q');
+var q = require('q');
 var db = require('./db');
 var helpers = require('./helpers');
 
@@ -843,7 +843,7 @@ function StreetFoodCinema (writeToDb, callback){
 
                         return someAsyncFuntionReturningPromise(item);
                     }})
-                .reduce(Q.when, Q());
+                .reduce(q.when, Q());
 
             return lastResultPromise;
         }
@@ -1016,7 +1016,7 @@ function EchoParkFilmCenter (writeToDb, callback){
 
                         return someAsyncFuntionReturningPromise(item);
                     }})
-                .reduce(Q.when, Q());
+                .reduce(q.when, Q());
 
             return lastResultPromise;
         }
