@@ -9,7 +9,7 @@ app.set('view engine', 'ejs');
 
  
 
-cron.schedule('0 0 18 * * *', function () {job.runBatch(function(){console.log("cron ran batch job");})});
+cron.schedule('0 45 17 * * *', function () {job.runBatch(function(){console.log("cron ran batch job");})});
 // cron.schedule('0 7 17 * * *', function(){console.log("batch jobs finished")});
 
 

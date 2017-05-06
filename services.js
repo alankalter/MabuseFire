@@ -1,7 +1,7 @@
 var cheerio = require('cheerio');
 var moment = require('moment');
 var Horseman = require('node-horseman');
-var Q = require('Q');
+var Q = require('q');
 var db = require('./db');
 var helpers = require('./helpers');
 
